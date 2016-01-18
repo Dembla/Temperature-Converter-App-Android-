@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="advancetemperatureconverter.magadistudio.com.advancetemperatureconverter.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="@string/enter_text"
+        android:id="@+id/enter_textId"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="0dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="@string/result_text"
+        android:id="@+id/result_textId"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="200dp"/>
+
+    //Celsius
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celsius_faran"
+        android:id="@+id/celsius_faranId"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/enter_textId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#d0a9eb" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celsius_kelvin"
+        android:id="@+id/celsius_kelvinId"
+        android:layout_below="@+id/celsius_faranId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#cd95f4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celsius_rankine"
+        android:id="@+id/celsius_rankineId"
+
+        android:layout_below="@+id/celsius_kelvinId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#c681f6" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celsius_delisle"
+        android:id="@+id/celsius_delisleId"
+        android:layout_below="@+id/celsius_rankineId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#c177f9" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celsius_newton"
+        android:id="@+id/celsius_newtonId"
+
+        android:layout_below="@+id/celsius_delisleId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#c36cf9" />
+
+    //Faran
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/faran_celsius"
+        android:id="@+id/faran_celsiusId"
+        android:background="#bff1f4"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/enter_textId"
+        android:layout_toRightOf="@+id/celsius_faranId"
+        android:layout_toEndOf="@+id/celsius_faranId" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/faran_kelvin"
+        android:id="@+id/faran_kelvinId"
+        android:layout_marginLeft="3dip"
+        android:layout_below="@+id/faran_celsiusId"
+        android:layout_toRightOf="@+id/celsius_kelvinId"
+        android:layout_toEndOf="@+id/celsius_kelvinId"
+        android:background="#a9f2f6" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/faran_rankine"
+        android:id="@+id/faran_rankineId"
+        android:layout_marginLeft="3dip"
+        android:layout_below="@+id/faran_kelvinId"
+        android:layout_toRightOf="@+id/celsius_rankineId"
+        android:layout_toEndOf="@+id/celsius_rankineId"
+        android:background="#92e7f2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/faran_delisle"
+        android:id="@+id/faran_delisleId"
+        android:layout_marginLeft="3dip"
+        android:layout_below="@+id/celsius_rankineId"
+        android:layout_toRightOf="@+id/celsius_delisleId"
+        android:layout_toEndOf="@+id/celsius_delisleId"
+        android:background="#7fe6f1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/faran_newton"
+        android:id="@+id/faran_newtonId"
+        android:layout_marginLeft="3dip"
+        android:layout_alignTop="@+id/celsius_newtonId"
+        android:layout_toRightOf="@+id/celsius_newtonId"
+        android:layout_toEndOf="@+id/celsius_newtonId"
+        android:background="#5ae3f2" />
+
+    //Kelvin
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kelvin_celsius"
+        android:id="@+id/kelvin_celsiusId"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/enter_textId"
+        android:layout_toRightOf="@+id/faran_celsiusId"
+        android:layout_toEndOf="@+id/faran_celsiusId"
+        android:background="#ecc8b2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kelvin_faran"
+        android:id="@+id/kelvin_faranId"
+        android:layout_marginLeft="3dip"
+        android:layout_alignTop="@+id/faran_kelvinId"
+        android:layout_toRightOf="@+id/faran_kelvinId"
+        android:layout_toEndOf="@+id/faran_kelvinId"
+        android:background="#efc2a4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kelvin_rankine"
+        android:id="@+id/kelvin_rankineId"
+        android:layout_marginLeft="3dip"
+        android:layout_below="@+id/kelvin_faranId"
+        android:layout_toRightOf="@+id/faran_rankineId"
+        android:layout_toEndOf="@+id/faran_rankineId"
+        android:background="#eab493" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kelvin_delisle"
+        android:id="@+id/kelvin_delisleId"
+        android:layout_marginLeft="3dip"
+        android:layout_below="@+id/faran_rankineId"
+        android:layout_toRightOf="@+id/faran_delisleId"
+        android:layout_toEndOf="@+id/faran_delisleId"
+        android:background="#f0b387" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kelvin_newton"
+        android:id="@+id/kelvin_newtonId"
+        android:layout_marginLeft="3dip"
+        android:layout_below="@+id/kelvin_delisleId"
+        android:layout_toRightOf="@+id/faran_newtonId"
+        android:layout_toEndOf="@+id/faran_newtonId"
+        android:background="#ea965f" />
+
+    //Rankine
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rankine_celsius"
+        android:id="@+id/rankine_celsiusId"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/enter_textId"
+        android:layout_toRightOf="@+id/kelvin_celsiusId"
+        android:layout_toEndOf="@+id/kelvin_celsiusId"
+        android:background="#d6eab5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rankine_faran"
+        android:id="@+id/rankine_faranId"
+        android:layout_marginLeft="3dip"
+        android:layout_above="@+id/rankine_kelvinId"
+        android:layout_toRightOf="@+id/kelvin_faranId"
+        android:layout_toEndOf="@+id/kelvin_faranId"
+        android:background="#cced9c" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rankine_kelvin"
+        android:id="@+id/rankine_kelvinId"
+        android:layout_marginLeft="3dip"
+        android:layout_below="@+id/kelvin_faranId"
+        android:layout_toRightOf="@+id/kelvin_rankineId"
+        android:layout_toEndOf="@+id/kelvin_rankineId"
+        android:background="#c3e98a" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rankine_delisle"
+        android:id="@+id/rankine_delisleId"
+        android:layout_marginLeft="3dip"
+        android:layout_below="@+id/kelvin_rankineId"
+        android:layout_toRightOf="@+id/kelvin_delisleId"
+        android:layout_toEndOf="@+id/kelvin_delisleId"
+        android:background="#b0e364" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rankine_newton"
+        android:id="@+id/rankine_newtonId"
+        android:layout_marginLeft="3dip"
+        android:layout_alignTop="@+id/kelvin_newtonId"
+        android:layout_toRightOf="@+id/kelvin_newtonId"
+        android:layout_toEndOf="@+id/kelvin_newtonId"
+        android:background="#a1df44" />
+
+    //Delisle
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delisle_celsius"
+        android:id="@+id/delisle_celsiusId"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="8dp"
+        android:layout_above="@+id/rankine_faranId"
+        android:layout_toRightOf="@+id/rankine_celsiusId"
+        android:layout_toEndOf="@+id/rankine_celsiusId"
+        android:background="#e7b2ca" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delisle_faran"
+        android:id="@+id/delisle_faranId"
+        android:layout_marginLeft="3dip"
+        android:layout_alignTop="@+id/rankine_faranId"
+        android:layout_toRightOf="@+id/rankine_faranId"
+        android:layout_toEndOf="@+id/rankine_faranId"
+        android:background="#e8a0be" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delisle_kelvin"
+        android:id="@+id/delisle_kelvinId"
+        android:layout_marginLeft="3dip"
+        android:layout_above="@+id/rankine_delisleId"
+        android:layout_toRightOf="@+id/rankine_kelvinId"
+        android:layout_toEndOf="@+id/rankine_kelvinId"
+        android:background="#e086ac" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delisle_rankine"
+        android:id="@+id/delisle_rankineId"
+        android:layout_marginLeft="3dip"
+        android:layout_above="@+id/rankine_newtonId"
+        android:layout_toRightOf="@+id/rankine_delisleId"
+        android:layout_toEndOf="@+id/rankine_delisleId"
+        android:background="#ef7cb0" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delisle_newton"
+        android:id="@+id/delisle_newtonId"
+        android:layout_marginLeft="3dip"
+        android:layout_alignTop="@+id/rankine_newtonId"
+        android:layout_toRightOf="@+id/rankine_newtonId"
+        android:layout_toEndOf="@+id/rankine_newtonId"
+        android:background="#f268a1" />
+
+    //Newton
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newton_celsius"
+        android:id="@+id/newton_celsiusId"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="8dp"
+        android:layout_above="@+id/delisle_faranId"
+        android:layout_toRightOf="@+id/delisle_celsiusId"
+        android:layout_toEndOf="@+id/delisle_celsiusId"
+        android:background="#eee0b7" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newton_faran"
+        android:id="@+id/newton_faranId"
+        android:layout_marginLeft="3dip"
+        android:layout_alignTop="@+id/delisle_faranId"
+        android:layout_toRightOf="@+id/delisle_faranId"
+        android:layout_toEndOf="@+id/delisle_faranId"
+        android:background="#ebdca2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newton_kelvin"
+        android:id="@+id/newton_kelvinId"
+        android:layout_marginLeft="3dip"
+        android:layout_below="@+id/newton_faranId"
+        android:layout_toRightOf="@+id/delisle_kelvinId"
+        android:layout_toEndOf="@+id/delisle_kelvinId"
+        android:background="#e6cf95" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newton_rankine"
+        android:id="@+id/newton_rankineId"
+        android:layout_marginLeft="3dip"
+        android:layout_alignTop="@+id/delisle_rankineId"
+        android:layout_toRightOf="@+id/delisle_rankineId"
+        android:layout_toEndOf="@+id/delisle_rankineId"
+        android:background="#e3c774" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newton_delisle"
+        android:id="@+id/newton_delisleId"
+        android:layout_marginLeft="3dip"
+        android:layout_below="@+id/newton_rankineId"
+        android:layout_toRightOf="@+id/delisle_newtonId"
+        android:layout_toEndOf="@+id/delisle_newtonId"
+        android:background="#f3d361" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/celsius_name"
+        android:id="@+id/celsius_nameId"
+        android:layout_marginTop="-2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/fahren_name"
+        android:id="@+id/fahren_nameId"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginLeft="90dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/kelvin_name"
+        android:id="@+id/kelvin_nameId"
+        android:layout_marginTop="-2dp"
+        android:layout_marginLeft="200dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/rankine_name"
+        android:id="@+id/rankine_nameId"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/delisle_name"
+        android:id="@+id/delisle_name"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="90dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/newton_name"
+        android:id="@+id/newton_nameId"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="200dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Advance Temperature Converter</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Enter Value and Press Button</string>
+    <string name="enter_text">Enter Temperature</string>
+    <string name="result_text">Result</string>
+
+    <string name="celsius_name">C = Celsius</string>
+    <string name="fahren_name">F = Fahrenheit</string>
+    <string name="kelvin_name">K = Kelvin</string>
+    <string name="rankine_name">R = Rankine</string>
+    <string name="delisle_name">D = Delisle</string>
+    <string name="newton_name">N = Newton</string>
+
+    //Celsius to Other Buttons
+    <string name="celsius_faran">C -> F </string>
+    <string name="celsius_kelvin">C -> K</string>
+    <string name="celsius_rankine">C -> R</string>
+    <string name="celsius_delisle">C -> D</string>
+    <string name="celsius_newton">C -> N</string>
+
+    //Faran to Other Buttons
+    <string name="faran_celsius">F -> C</string>
+    <string name="faran_kelvin">F -> K</string>
+    <string name="faran_rankine">F -> R</string>
+    <string name="faran_delisle">F -> D</string>
+    <string name="faran_newton">F -> N</string>
+
+    //Kelvin to Other Buttons
+    <string name="kelvin_celsius">K -> C</string>
+    <string name="kelvin_faran">K -> F</string>
+    <string name="kelvin_rankine">K -> R</string>
+    <string name="kelvin_delisle">K -> D</string>
+    <string name="kelvin_newton">K -> N</string>
+
+    //Rankine to Other Buttons
+    <string name="rankine_celsius">R -> C</string>
+    <string name="rankine_faran">R -> F</string>
+    <string name="rankine_kelvin">R -> K</string>
+    <string name="rankine_delisle">R -> D</string>
+    <string name="rankine_newton">R -> N</string>
+
+    //Delisle to Other Buttons
+    <string name="delisle_celsius">D -> C</string>
+    <string name="delisle_faran">D -> F</string>
+    <string name="delisle_kelvin">D -> K</string>
+    <string name="delisle_rankine">D -> R</string>
+    <string name="delisle_newton">D -> N</string>
+
+    <string name="newton_celsius">N -> C</string>
+    <string name="newton_faran">N -> F</string>
+    <string name="newton_kelvin">N -> K</string>
+    <string name="newton_rankine">N -> R</string>
+    <string name="newton_delisle">N -> D</string>
+
+
+
+
+</resources>
